@@ -1,9 +1,17 @@
+# import os from flask import Flask, render_template, request, redirect, url_for, session, flash from 
+# flask_sqlalchemy import SQLAlchemy from flask_bcrypt import Bcrypt from flask_admin import Admin # 
+# Import Flask-Admin from flask_admin.contrib.sqla import ModelView # Import ModelView to add models to 
+# admin
+
+
 import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-from flask_admin import Admin  # Import Flask-Admin
-from flask_admin.contrib.sqla import ModelView  # Import ModelView to add models to admin
+from flask_admin import Admin
+from flask_admin.contrib.sqla import ModelView
+
+
 
 # Create Flask app
 app = Flask(__name__)
